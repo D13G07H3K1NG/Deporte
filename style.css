@@ -1,0 +1,303 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0;
+}
+h1{font-size: 3em;}
+h2{font-size: 2.5em;}
+h3{font-size: 1.5em;}
+p{font-size: 1em;}
+ul{list-style: none;
+    padding: auto;
+    margin-left: 0;
+}
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    color: white;
+    background-color: black;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+    animation: moverTexto 10s infinite alternate;
+    @keyframes moverTexto {
+        0% {
+            transform: translateX(0);
+        }
+        100%{
+    transform; translateX(100px);
+        }
+    }
+}
+header{
+    background-color: #bbb;
+}
+header.logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+}
+header .contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: white;
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 150vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(yoo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+    animation: moverTexto 10s infinite alternate;
+    @keyframes moverTexto {
+        0% {
+            transform: translateX(0);
+        }
+        100%{
+    transform; translateX(100px);
+        }
+    }
+}
+#hero h2{
+    color: white;
+}
+#yo{
+    text-align: left;
+    align-items: start;
+    padding: 0;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(vs\ pato.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+#yo .container{
+    overflow: auto;
+}
+#yo h3{
+   width: 300px;
+   float: left;
+}
+#Filosofia{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(165, 156, 144);
+    background-size: cover;
+    color: white;
+}
+#Filosofia .filo{
+    animation: moverTexto 20s infinite alternate-reverse;  
+}
+@keyframes moverTexto{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(25px);
+    }
+}
+.contenedor{
+    animation: texto 10s infinite alternate-reverse;
+}
+@keyframes texto{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+.prensa{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(yucatan.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#patrocinios{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#Trayectoria .deporte{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+} 
+.deporte:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(hermano.jpg);
+}
+.deporte:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(hachiman.jpg);
+}
+.deporte:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(rank.jpg);
+}
+#patrocinios{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#contacto{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(serie.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #f1f1f1;
+}
+#fin{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(douglas.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+footer{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.modal-contenido {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.cerrar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.album img {
+    width: 200px; 
+    height: auto;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
